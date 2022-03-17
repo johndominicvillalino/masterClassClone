@@ -1,0 +1,205 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000;
+    color:#fff;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 1.1em;
+    
+}
+
+
+.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    max-width: 400px;
+    width: 100%;
+    
+}
+
+.hover-highlight {
+    cursor: pointer;    
+    transition: color 500ms;
+}
+
+.hover-highlight:hover {
+    color: #8b919e
+}
+
+
+.logo {
+    display: flex;
+    max-width: 200px;
+    max-height: 250px;
+    height: 100%;
+    width: 200px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.category,.search {
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.category span img{
+    position: absolute;
+    top:0;
+    filter: invert(98%) sepia(84%) saturate(3769%) hue-rotate(182deg) brightness(122%) contrast(95%);
+    right:-25px;
+  
+}
+
+.search span img {
+    position: absolute;
+    filter: invert(98%) sepia(84%) saturate(3769%) hue-rotate(182deg) brightness(122%) contrast(95%);
+    top: 3px;
+    left :-20px;
+}
+
+.login {
+    display:flex;
+    gap: 10px;
+}
+
+.login div:hover {
+    cursor: pointer;
+}
+
+.category {
+    cursor: pointer;
+}
+
+.hover-menu-wrapper {
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top:30px;
+    left: -80px;
+
+
+}
+
+.hover-menu-container {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #191c21;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 310px; 
+    width: 280px;
+    position: relative;
+
+}
+
+
+.hover-menu-container ul li {
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color .40s;
+}
+
+.hover-menu-container ul li:hover {
+    background-color: rgba(255, 255, 255, 0.192);
+    
+}
+
+#hoverMenu, #menu-search {
+visibility:hidden;
+
+}
+
+
+.category:hover #hoverMenu, .search:hover #menu-search {
+    visibility: visible;
+    animation: fade 500ms;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.discover {
+
+text-align: center;
+position: absolute;
+   width: 100%;
+   height: 70px;
+   background-color: #191c21;
+   bottom: -65px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px solid beige;
+   
+}
+
+.discover button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color .40s;
+    outline: none;
+}
+
+.discover button:hover {
+    background-color: #8b919e;
+    opacity: 1.0;
+
+}
+
+.search-input-container {
+
+    position: absolute;
+    display:inline;
+    top:25px;
+    left:-120px;
+  
+}
+
+.search-input-container input {
+
+    padding: 25px 35px;
+    width: 320px;
+    text-align: left;
+    font-size: 1rem;
+    background-color: #191c21;
+    border: 1px solid #8b919e;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.search-input-container input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder { 
+    font-size: 1rem;
+  } 
+
+  .search-input-container span {
+      position: absolute;
+      left:30px;
+      top: 20px;
+      filter: invert(63%) sepia(2%) saturate(1447%) hue-rotate(183deg) brightness(91%) contrast(90%);
+     
+  }
