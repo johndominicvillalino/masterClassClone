@@ -14,8 +14,9 @@
 }
 .discount-desc {
     font-size: 2rem;
-    font-weight: 800;
+
     color: #e32652;
+    font-family: business;
 }
 .discount-desc span {
     color: #000;

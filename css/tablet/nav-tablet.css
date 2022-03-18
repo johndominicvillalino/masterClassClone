@@ -44,6 +44,12 @@
         position: absolute;
     }
 
+    .email-input input {
+
+        padding: 10px;
+        
+    }
+
    
 
  
