@@ -1,0 +1,63 @@
+
+.discount-container {
+   
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+   align-items: center;
+   position: relative;
+   flex-wrap: wrap;
+   text-align: center;
+   border-bottom: 1px solid rgb(146, 144, 144);
+
+}
+.discount-desc {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #e32652;
+}
+.discount-desc span {
+    color: #000;
+}
+
+.x-button {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 3px 5px;
+    transition: background-color .40s
+}
+
+.end-soon-desc {
+    color: rgb(105, 104, 104)
+}
+
+.sign-up-btn button {
+
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #e32652;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color .40s;
+}
+
+.sign-up-btn button:hover {
+    background-color: #ee7591;
+}
+
+.x-button:hover {
+
+    background-color: rgba(153, 149, 149, 0.397);
+    border-radius: 5px;
+
+    
+} 
+
+.end-soon-desc {
+    cursor: pointer;
+}
