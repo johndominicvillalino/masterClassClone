@@ -21,8 +21,6 @@
         justify-content: center;
         gap: 20%;
         width: 200px;
-
-
     }
 
     .logo-mobile {
@@ -44,11 +42,11 @@
         position: absolute;
     }
 
-    .email-input input {
-
-        padding: 10px;
-        
-    }
+#banner-button {
+    width: 100%;
+    padding: 15px;
+}
+ 
 
    
 

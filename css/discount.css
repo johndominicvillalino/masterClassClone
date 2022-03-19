@@ -1,4 +1,8 @@
 
+#discountdiv {
+    background-color: #fff;
+}
+
 .discount-container {
    
     display:flex;
@@ -62,3 +66,4 @@
 .end-soon-desc {
     cursor: pointer;
 }
+
