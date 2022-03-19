@@ -2,6 +2,7 @@
 @import url('./nav.css');
 @import url('./discount.css');
 @import url('./banner.css');
+@import url('./dom-cren-section.css');
 
 
 
@@ -11,4 +12,5 @@
 
 
 @import url('./tablet/nav-tablet.css');
-@import url('./tablet/banner-tablet.css')
+@import url('./tablet/banner-tablet.css');
+@import url('./tablet/dom-cren-section-tablet.css');

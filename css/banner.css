@@ -1,6 +1,5 @@
 .banner {
-    max-height: 800px;
-    height: 100vh;
+
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: black;
@@ -42,10 +41,15 @@
     align-items: center;
 }
 
+.img-banner {
+    margin-top: 20px;
+    height: 100%;
+}
+
 .img-banner img {
     margin: 0 auto;
     width: 100%;
-    height: auto;
+
     border-radius: 5px;
 }
 
