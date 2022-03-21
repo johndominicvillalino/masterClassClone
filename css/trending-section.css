@@ -1,0 +1,108 @@
+.trend-container-div{
+    display:flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.trending-section {
+
+    display:flex;
+    color: #fff;
+    width: 1200px;
+    height: 500px;
+    margin: 50px auto;
+    align-items: center;
+    overflow-x: scroll;
+    z-index: -10;
+}
+
+.trending-section::-webkit-scrollbar {
+    width: 0;
+}
+
+.first-trend {
+    display: flex;
+    width: auto;
+
+
+}
+
+.img-trend {
+ 
+    margin-right: 20px;
+    height: 400px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+
+.one {
+    background-image: url('../assets/teacher/teacher1.jfif');
+}
+.two {
+    background-image: url('../assets/teacher/teacher2.jfif');
+}
+.three {
+    background-image: url('../assets/teacher/teacher3.jfif');
+}
+.four {
+    background-image: url('../assets/teacher/teacher4.jfif');
+}
+.five {
+    background-image: url('../assets/teacher/teacher5.jfif');
+}
+
+
+.teacher {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-button {
+    position: absolute;
+    left:15px;
+    top: 250px;
+
+  }
+
+  
+.right-button {
+
+  position: absolute;
+  top: 250px;
+  right:15px;
+}
+
+.left-button button,.right-button button {
+    cursor: pointer;
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 50px;
+    background-color: #4d5767;
+    color: rgb(172, 171, 171);
+    border: 0;
+    font-size: 1.5rem;
+
+}
+
+.left-button button:hover,.right-button button:hover {
+    text-align: #fff;
+    background-color: #6a788f;
+}
+
+
+.trend-gradient-mask {
+position: absolute;
+  width: 200px;
+  height: 100%;
+  margin: auto 0;
+  background-image: linear-gradient(to right, transparent,#000);
+
+  right: 0;
+
+
+}
