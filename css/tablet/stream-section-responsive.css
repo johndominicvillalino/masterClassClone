@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    .gordon-img-container{
+        display: none;
+    }
+    .stream-plans-section  {
+        grid-template-columns: auto;
+        margin: 0 30px;
+        background-image: url('../../assets/gordonoverlay.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      
+    }
+    .getstarted-btn,.explore-btn  {
+        width: 50%;
+    }
+}
+
+
+
+
+@media (max-width: 425px) {
+    .getstarted-btn,.explore-btn  {
+        width: 100%;
+    }
+}

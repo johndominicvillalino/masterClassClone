@@ -1,0 +1,111 @@
+
+.stream-plans-section {
+    color: #fff;
+    max-width: 1200px;
+   
+    height: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.gordon-img-container {
+
+
+    background-image: url('../assets/gordon ram.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.stream-desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.anytime-anywhere {
+    font-size: 1.5rem;
+
+}
+
+.check-svg {
+    background-image: url('../assets/checked.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block;
+    filter: invert(100%) sepia(29%) saturate(32%) hue-rotate(221deg) brightness(104%) contrast(101%);
+ 
+}
+
+
+.watch-desc-container div {
+    margin: 10px 0;
+    display: flex;
+    
+}
+
+.watch-desc-container span{
+    margin-right: 5px;
+}
+
+.amount-text {
+    /* font-family: 'Montserrat','sans-serif'; */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bill-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bill-container div {
+    margin-top: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.buttons-container button {
+    margin-top: 10px;
+}
+.getstarted-btn {
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #E32652;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color .40s;
+}
+
+.getstarted-btn:hover {
+    background-color: #d86882;
+}
+
+.explore-btn {
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #43454C;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color .40s;
+}
+
+
+.explore-btn:hover {
+    background-color: #6f727e;
+}
