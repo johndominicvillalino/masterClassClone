@@ -10,6 +10,13 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Vibes&display=swap');
+/* font-family: 'Vibes', cursive; */
 
 @font-face {
     font-family: business;

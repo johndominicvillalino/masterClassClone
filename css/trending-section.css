@@ -12,7 +12,7 @@
     color: #fff;
     width: 1200px;
     height: 500px;
-    margin: 50px auto;
+    margin: 0 auto;
     align-items: center;
     overflow-x: scroll;
     z-index: -10;
@@ -33,7 +33,7 @@
  
     margin-right: 20px;
     height: 400px;
-    width: 200px;
+    width: 230px;
     background-color: aqua;
     border-radius: 5px;
 
@@ -105,4 +105,74 @@ position: absolute;
   right: 0;
 
 
+}
+
+.img-text-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        gap:4%;
+        text-align: center;
+
+}
+
+.button-new-trending {
+   position: absolute;
+   top: 15px;
+   left: 10px;
+   background-color: #fff;
+   color: #000;
+   padding: 3px 8px;
+   border-radius: 20px;
+   font-size: 12px;
+
+   
+}
+
+.techer-title {
+    font-size: 3rem;
+    width: auto;
+    text-align: center;
+}
+
+.roy-font {
+    font-family: business,'serif';
+}
+
+.terence-font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.george-font {
+    font-size: 1.2rem;
+    font-family: 'Vibes', cursive;
+}
+
+.joan-font {
+    font-family: business,'serif';
+}
+
+.trending-title-container {
+
+    color: #fff;
+    display:flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.trending-title-container div {
+    margin: 5px 0;
+}
+
+.trending-title-container div h4 {
+    color: rgb(138, 135, 135);
+    cursor:pointer;
 }

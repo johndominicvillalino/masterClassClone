@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+    .first-trend,.trending-title-container  {
+        margin-left: 30px;
+    }
+}
+
+
+
+@media (max-width: 426px) {
+    .img-trend {
+        width: 320px;
+    }
+    .first-trend {
+        margin-left: 50px;
+    
+    }
+}
