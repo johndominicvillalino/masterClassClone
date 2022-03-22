@@ -62,6 +62,8 @@ $('#leftBtn').click(function () {
 
 })
 
+// scroll detect increase opacity
+
 $(window).scroll(function () {
 
     let fadeStart = 100
@@ -72,70 +74,74 @@ $(window).scroll(function () {
     let documentHeight = $(document).height();
 
     const atBottom = windowHeight + offset === documentHeight;
-
-    if (!atBottom) {
-
-        opacity = .20;
-      
-    }
-
+  
     if (offset <= fadeStart) {
         opacity = 1;
-    }  
-    
-    if (atBottom) {
-            
-        fading.slideDown("slow", function () {
+    }
+     if (!atBottom) {
 
+        opacity = .20;
+    }
+    if (atBottom) {
+
+        fading.slideDown("slow", function () {
         });
     }
     fading.css('opacity', opacity)
-
 })
 
-$(window).scroll(function() {
-    clearTimeout($.data(this, 'scrollTimer'));
-    $.data(this, 'scrollTimer', setTimeout(function() {
-       
-        $('#getStarted').css('opacity',1)
 
-    }, 500));
+//detect stop scroll
+
+$(window).scroll(function () {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function () {
+
+        $( "#getStarted" ).animate({
+            opacity: '1',
+          }, 1000, function() {
+           
+          });
+
+    }, 200));
 });
 
 
+//mobile nav control
+
 $('#mobileCatClick').click(() => {
-    
-    $('.mobile-nav-all-cat').fadeIn('slow',function(){
-        $('.mobile-nav-all-cat').css('display','flex');
+
+    $('.mobile-nav-all-cat').fadeIn('slow', function () {
+        $('.mobile-nav-all-cat').css('display', 'flex');
     })
-    $('#body').css('position','relative');
-    $('#body').css('overflow','hidden');
+    $('#body').css('position', 'relative');
+    $('#body').css('overflow', 'hidden');
 })
 
 $('#mobileNavClose').click(() => {
-    $('.mobile-nav-all-cat').slideUp('slow',function(){
-          $('.mobile-nav-all-cat').css('display','none');
+    $('.mobile-nav-all-cat').slideUp('slow', function () {
+        $('.mobile-nav-all-cat').css('display', 'none');
     })
-    $('#body').css('position','relative');
-    $('#body').css('overflow','auto');
-  
+    $('#body').css('position', 'relative');
+    $('#body').css('overflow', 'auto');
+
 })
 
 
 $('#showMenu').click(() => {
-    
-    $('.mobileMenuContainer').fadeIn('slow',function(){
-        $('.mobileMenuContainer').css('display','flex');
+
+    $('.mobileMenuContainer').fadeIn('slow', function () {
+        $('.mobileMenuContainer').css('display', 'flex');
     })
-    $('#body').css('position','relative');
-    $('#body').css('overflow','hidden');
+    $('#body').css('position', 'relative');
+    $('#body').css('overflow', 'hidden');
 })
 
 $('#closeButtonMobile').click(() => {
-    $('.mobileMenuContainer').slideUp('slow',function(){
-          $('.mobileMenuContainer').css('display','none');
+    $('.mobileMenuContainer').slideUp('slow', function () {
+        $('.mobileMenuContainer').css('display', 'none');
     })
-    $('#body').css('position','relative');
-    $('#body').css('overflow','auto');
-  
+    $('#body').css('position', 'relative');
+    $('#body').css('overflow', 'auto');
+
 })
