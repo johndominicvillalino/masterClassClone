@@ -61,6 +61,10 @@
    
 }
 
+.mobile-nav-all-cat {
+    display:none;
+}
+
 .banner-form {
     width: 100%;
 }

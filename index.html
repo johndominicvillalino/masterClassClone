@@ -12,8 +12,64 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <header>
+    
+
+      <div class="mobile-nav-all-cat">
+        <ul>
+          <li>Arts & Entertainment</li>
+          <li>Home & Lifestyle</li>
+          <li>Food</li>
+          <li>Business</li>
+          <li>Music</li>
+          <li>Writing</li>
+          <li>Design</li>
+          <li>Sports and Gaming</li>
+          <li>Community & Government</li>
+          <li>Wellness</li>
+          <li>Science & Tech</li>
+        </ul>
+        <div class="navBtnContainer-mobile"><button class="btn-discover">Discover</button></div>
+        <div id="mobileNavClose">X</div>
+      </div>
+
+      <div class="mobileMenuContainer">
+        <div class="closeButtonMobile">
+          <span id="closeButtonMobile">
+            X
+          </span>
+        </div>
+        <div id="" class="searchInputNav">
+          <input
+            type="text"
+            placeholder="Search Instructors, classes, Topics"
+          />
+          <span
+            ><img
+              width="20px"
+              height="20px"
+              src="./assets/search.svg"
+              alt=""
+          /></span>
+        </div>
+        <ul>
+          <li>View Plans</li>
+          <li>At Work</li>
+          <li>Gift MasterClass</li>
+          <li>Support</li>
+          <li>Login</li>
+        </ul>
+        <div class="navDescText">
+          <h2>Learn Something new today</h2>
+          <p>Get all 150+ classes across 11 categories.</p>
+        </div>
+        <div class="navMenuButton">
+          <span >GET STARTED</span>
+        </div>
+      </div>
+
+
       <nav>
         <div class="nav-container">
           <div class="logo">
@@ -80,10 +136,10 @@
             <div class="mobile-cat-container">
               <div class="mobile-all-cat">
                 All Categories
-                <span><img src="./assets/arrowDown.svg" alt="" /></span>
+                <span id="mobileCatClick"><img src="./assets/arrowDown.svg" alt="" /></span>
               </div>
               <div class="mobile-menu">
-                <span>
+                <span id="showMenu">
                   <img
                     width="20px"
                     height="20px"
@@ -106,7 +162,13 @@
           <span><img width="10px" src="./assets/xbutton.svg" alt="" /></span>
         </div>
       </div>
+
+
+
     </header>
+
+
+
 
     <section class="banner">
       <div class="form-desc-container">
@@ -297,7 +359,9 @@
 
     <section class="stream-plans-section">
       <div class="stream-desc-container">
-        <div class="anytime-anywhere"> <h2>Stream anytime, anywhere, at your own pace.</h2></div>
+        <div class="anytime-anywhere">
+          <h2>Stream anytime, anywhere, at your own pace.</h2>
+        </div>
 
         <div class="watch-desc-container">
           <div>
@@ -306,48 +370,86 @@
           </div>
           <div>
             <span class="check-svg"></span>
-           Offline viewing available for iOS
+            Offline viewing available for iOS
           </div>
           <div>
             <span class="check-svg"></span>
-           Downloadable instructor guides for every class
+            Downloadable instructor guides for every class
           </div>
         </div>
         <div class="downloadables-container">
           <div>
-            <img src="./assets/appstore.svg" alt="">
-       
-  
-            <img src="./assets/playsore.svg" alt="">
+            <img src="./assets/appstore.svg" alt="" />
+
+            <img src="./assets/playsore.svg" alt="" />
           </div>
           <div>
-            <img src="./assets/amazon.svg" alt="">
-      
-   
-            <img src="./assets/ruko.svg" alt="">
+            <img src="./assets/amazon.svg" alt="" />
+
+            <img src="./assets/ruko.svg" alt="" />
           </div>
         </div>
 
         <div class="bill-container">
-          <div class="amount-text">
-            $15/mo
-          </div>
+          <div class="amount-text">$15/mo</div>
           <div>
             <p>Billed Annually</p>
           </div>
           <div class="buttons-container">
-            <button class='getstarted-btn'>
-              GET STARTED
-            </button>
-            <button class="explore-btn">
-              EXPLORE CLASSES
-            </button>
+            <button class="getstarted-btn">GET STARTED</button>
+            <button class="explore-btn">EXPLORE CLASSES</button>
           </div>
         </div>
       </div>
-      
+
       <div class="gordon-img-container"></div>
     </section>
+    <footer class="footer-container">
+      <div class="extra-div">
+
+      </div>
+      <ul class="footer-inner-container">
+        <li class="head-footer">MasterClass Live</li>
+        <li>Articles</li>
+        <li>Sitemap</li>
+        <li>Gifts</li>
+      </ul>
+
+      <ul class="footer-inner-container">
+        <li class="head-footer">About</li>
+        <li>Diversity, Equity, and Inclusion</li>
+        <li>Careers</li>
+        <li>Newsroom</li>
+        <li>Security</li>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Social Impact</li>
+      </ul>
+
+      <ul class="footer-inner-container">
+        <li class="head-footer">Social</li>
+        <li><span></span>Twitter</li>
+        <li><span></span>Instagram</li>
+        <li><span></span>Facebook</li>
+        <li><span></span>YouTube</li>
+        <li><span></span> LinkedIn</li>
+      </ul>
+
+      <ul class="footer-inner-container">
+        <li class="head-footer">Download</li>
+        <li><img src="./assets/appstore.svg" alt="" /></li>
+        <li><img src="./assets/playsore.svg" alt="" /></li>
+        <li><img src="./assets/amazon.svg" alt="" /></li>
+        <li><img src="./assets/ruko.svg" alt="" /></li>
+      </ul>
+      <div class="extra-div">
+
+      </div>
+      <div id='getStarted' class="get-started">
+        Starting at $15/month (billed annually) for all classes and sessions <span class="get-started-bttn">GET STARTED</span>
+      </div>
+    </footer>
+
   </body>
 
   <script src="./js/scripts.js"></script>
