@@ -11,18 +11,13 @@ $("#closeButton").click(function () {
 
 $('#rightBtn').click(function () {
 
-
     let $window = $(window);
-
     function checkWidth() {
         let windowsize = $window.width();
         return windowsize;
     }
 
-
     let scrollPoss = 880;
-
-
     if (checkWidth() <= 768) {
         scrollPoss = 510;
     }
@@ -74,11 +69,11 @@ $(window).scroll(function () {
     let documentHeight = $(document).height();
 
     const atBottom = windowHeight + offset === documentHeight;
-  
+
     if (offset <= fadeStart) {
         opacity = 1;
     }
-     if (!atBottom) {
+    if (!atBottom) {
 
         opacity = .20;
     }
@@ -97,11 +92,11 @@ $(window).scroll(function () {
     clearTimeout($.data(this, 'scrollTimer'));
     $.data(this, 'scrollTimer', setTimeout(function () {
 
-        $( "#getStarted" ).animate({
+        $("#getStarted").animate({
             opacity: '1',
-          }, 1000, function() {
-           
-          });
+        }, 350, function () {
+
+        });
 
     }, 200));
 });
@@ -111,7 +106,7 @@ $(window).scroll(function () {
 
 $('#mobileCatClick').click(() => {
 
-    $('.mobile-nav-all-cat').fadeIn('slow', function () {
+    $('.mobile-nav-all-cat').slideDown('slow', function () {
         $('.mobile-nav-all-cat').css('display', 'flex');
     })
     $('#body').css('position', 'relative');
@@ -138,7 +133,7 @@ $('#showMenu').click(() => {
 })
 
 $('#closeButtonMobile').click(() => {
-    $('.mobileMenuContainer').slideUp('slow', function () {
+    $('.mobileMenuContainer').fadeOut('slow', function () {
         $('.mobileMenuContainer').css('display', 'none');
     })
     $('#body').css('position', 'relative');
